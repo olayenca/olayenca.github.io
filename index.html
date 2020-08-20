@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <title>Olayinka Otuniyi</title>
+    <meta name="google-site-verification" content="6wt9AJbjlUFFE_qFDY8RZUKN_m0r9q3_o0ofzUkT2J0">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#2F3BA2">
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="manifest" crossorigin="use-credentials" href="./workers/manifest.webmanifest">
+
+     <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./workers/serviceWorker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        } else {
+            console.log('CLIENT: service worker is not supported.');
+        }
+    </script>
+
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+    <link href="//fonts.googleapis.com/css?family=Coiny|Laila" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<link rel="shortcut icon" href="./favicon.ico"><link href="./vanilla.css" rel="stylesheet"></head>
+
+<body scroll="no" style="height: 99vh; width: 100vw;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="myNumberInput">
+        <input type="value" value="009447468538710" id="number">
+    </div>
+    <div id="page_home">
+        <nav class="row-sm-12">
+            <button id="home" class="col-sm-2"><a href="/index.html" target="_self"><i class="fa fa-home"></i>Home</a></button>
+            <button id="about" class="col-sm-2"><a href="/about.html" target="_self"><i class="fas fa-user-astronaut"></i>About </a></button>
+            <button id="portfolio" class="col-sm-3"> <a href="/projects.html" target="_self"><i class="fas fa-project-diagram"></i>Projects</a></button>
+            <button id="app" class="col-sm-3"> <a href="/games.html" target="_self"><i class="fas fa-gamepad"></i>Games</a></button>
+            <button id="contact" class="col-sm-2"><i class="fa fa-envelope"></i> Contact
+                <div id="contact_contents" style="width: inherit;top: 5px !important;position: inherit;">
+                    <a id="copy_phone" class="toggleMenu" type="button">Phone</a>
+                    <a href="mailto:olayinka@otuniyi.co.uk" class="toggleMenu" type="button">Email<span class="arrow-right">→</span></a>
+                    <a id="cv_link" class="toggleMenu" type="button" href="https://1drv.ms/b/s!Aqq-L-K75FZHzhGKe4aAsJlAsyXL" target="_blank">CV</a>
+                </div>
+          </button>
+        </nav>
+        <div class="container">
+            <div id="intro" class="row centered">
+                <div id="engineer_jumbo" class="row-sm-12">
+                    <i class="fas fa-cogs"></i>
+                    <p id="jumbo_0">Engineer</p>
+                </div>
+
+                <p id="jumbo_1" class="row-sm-12">&lt;&sol;Developer&gt;</p>
+                <p id="intro_text" class="row-sm-12">An experienced Software Engineer with a self-motivated and enthusiastic attitude towards turning concepts, ideas and theoretical innovation into real life working projects, through the programming of user-friendly and reliable applications.
+                </p>
+            </div>
+            <div class="bottom-right">
+                <div id="webapps" style="display: block; font-size: 5vmin; text-align: end; left: -3px; position: relative;">
+                    <div title="React Webapp" alt="React" class="icons" id="react"><i class="fab fa-react"></i></div>
+                </div>
+                <div id="socials" style="display:flex; justify-content: space-evenly;" class="fa-2x">
+                    <div class="icons grow" id="git" style="margin-right: .7vw;" title="git link" alt="git"><i class="fab fa-github-alt"></i></div>
+                    <div class="icons grow" id="linkedin"><i class="fab fa-linkedin-in" title="linkedin link" alt="linkedin"></i></div>
+                    <div class="icons grow" title="instagram link" alt="instagram" id="twitter"><i class="fab fa-twitter"></i></div>
+                    <div class="icons grow" id="insta"><i class="fab fa-instagram"></i></div>
+                    <div class="icons grow" title="Change Website View" alt="Switch View" id="switch"><i class="fas fa-random"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright &copy; 2020 Olayinka</footer>
+<script type="text/javascript" src="./vanilla.bundle.js"></script></body>
+
+</html>

@@ -1,0 +1,11 @@
+version: '2.2'
+  
+sut:
+  build: ./test/
+  dockerfile: Dockerfile.test
+  command: docker build -t olayenca/website:latestTest -f Dockerfile.test . 
+    links:
+    - web
+web:
+  build: .
+  dockerfile: Dockerfile

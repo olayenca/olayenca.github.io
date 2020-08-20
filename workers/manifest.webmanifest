@@ -1,0 +1,39 @@
+{  
+   "short_name":"MissOO",
+   "name":"MissOO",
+   "description":"Olayinka Otuniyi's Website",
+   "icons":[  
+      {  
+         "src":"../imgs/favicon.ico",
+         "sizes":"32x32",
+         "type":"image/x-icon"
+      },
+      {  
+         "src":"../imgs/offline.png",
+         "sizes":"512x354",
+         "type":"PNG",
+         "purpose":"any"
+      },{  
+         "src":"../imgs/twitch-logo.png",
+         "sizes":"512x354",
+         "type":"PNG",
+         "purpose":"any"
+      },{  
+         "src":"../imgs/youtube-logo.png",
+         "sizes":"512x354",
+         "type":"PNG",
+         "purpose":"any"
+      }
+   ],
+   "serviceworker":{  
+      "src":"./serviceWorker.js",
+      "scope":"/app",
+      "type":"",
+      "update_via_cache":"none"
+   },
+   "start_url":"./",
+   "display":"standalone",
+   "theme_color":"#000000",
+   "orientation":"portrait",
+   "background_color":"#ffffff"
+}
