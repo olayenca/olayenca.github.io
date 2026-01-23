@@ -1,5 +1,4 @@
-  
-#!/bin/sh
+  #!/bin/sh
 
 export COMPOSE_FILE="test/docker-compose.test.yml"
 
